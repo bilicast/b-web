@@ -1,0 +1,78 @@
+<li data-comment-id="{{postId}}" class="review products_reviews_list_review product_review__container ">
+    <div class="products_reviews_list_review__inner">
+        <div class="products_reviews_list_review__lcontents">
+            <div class="score products_reviews_list_review__head">
+                <div class="products_reviews_list_review__score">
+
+                    <div class="products_reviews_list_review__info_title">{{userName}}</div>
+
+                    <div class="products_reviews_list_review__score_star_rating">
+                        {{{star}}}
+                    </div>
+                </div>
+            </div>
+            <div class="products_reviews_list_review__content review_content ">
+
+                <div class="products_reviews_list_review__content_inner review_content__collapsed">
+                    <div class="products_reviews_list_review__message">
+                        <a class="js-link-expand">
+                            <div class="review_message review_message--collapsed review_message--collapsed3">
+                                {{{breaklines text}}}
+                            </div>
+                            <div class="mall-link-color see_more">... 更多</div>
+                        </a>
+
+
+                        {{#if imageUrl}}
+                            <ul class="products_reviews_list_review__images">
+
+                                <li class="products_reviews_list_review__image">
+                                    <a class="link-fullscreen-popup">
+                                        <img src="{{imageUrl}}"
+                                             class="review-image"
+                                             style="opacity: 1;">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        {{/if}}
+
+                    </div>
+                    <div class="products_reviews_list_review__foot">
+                        <div class="products_reviews_list_review__actions">
+                            <a class="products_reviews_list_review__comments_link mall-link-color" href="#">
+                                <span class="js-comments-link-count-text ">
+                  <span class="comments-count">{{replyCount}}</span> 留言</span> </a>
+                        </div>
+                        <div class="comments js-comments-container hidden">
+                            <div class="comments__arrow_top"></div>
+                            <ul class="comments__list">
+                            </ul>
+
+                            <div class="comments__new_comment">
+                                <input
+                                        placeholder="用戶名稱"
+                                        class="comments__new_name_input"
+                                        data-login-required="true"
+                                        type="text"
+                                        name="comment[name]"
+                                >
+                                <input
+                                        placeholder="請評論：）"
+                                        class="comments__new_comment_input "
+                                        data-login-required="true"
+                                        type="text"
+                                        name="comment[message]"
+                                >
+                                <button class="comments__new_comment_submit_button"
+                                        type="submit">發送
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>

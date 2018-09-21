@@ -1,0 +1,90 @@
+body {font-family: Microsoft Yahei, Hiragino Sans GB, sans-serif; font-size:14px;background: #fff;margin:0;padding:0;border:0;}
+body, div, ul, li, h1, h2, h3, h4, h5, h6, form, fieldset, input, textarea, button, p, th, td {
+  margin: 0;
+  padding: 0
+}
+
+textarea {
+  resize: none;
+  border: 0
+}
+
+textarea, input {
+  outline: 0
+}
+
+button, input {
+  border: 0
+}
+
+li {
+  list-style-type: none
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer
+}
+
+strong {
+  color: #333333
+}
+
+i {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1
+}
+
+.hidden {
+  display: none !important
+}
+
+.inline {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1
+}
+
+.clear {
+  clear: both
+}
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  visibility: hidden
+}
+
+.relative {
+  position: relative
+}
+
+#data {
+  display: none
+}
+
+a.inherit_color {
+  color: inherit
+}
+
+.bold {
+  font-weight: bold
+}
+
+body.app {
+  margin: 20px
+}
+
+body #content {
+  margin: 0 auto;
+  font-size: 12px;
+  width: 100%;
+}
+
+
+

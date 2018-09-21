@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+    <title>Photo Review Popup</title>
+    <link rel="stylesheet" href="/css/application.css[___VERSION___]">
+</head>
+<body class="reviews photo_review_popup">
+<div id="content">
+    <div class="show_photo_review fullscreen_popup review" style="opacity: 1">
+        <div class="fullscreen_popup__background"></div>
+        <div id="photo-popup-container"
+             class="show_photo_review__photo_popup_container fullscreen_popup__content_container" style="display: none">
+            <div id="photo-popup-content"
+                 class="show_photo_review__photo_popup_content fullscreen_popup__content">
+                <div class="show_photo_review__photos_container">
+
+                </div>
+                <div id="review-photo-popup-review-summary" class="photo_review_popup__review_summary" style="display: none">
+                    <!-- review -->
+                </div>
+                <div id="review-contents-container"
+                     class="show_photo_review__review_contents_container">
+                    <header id="topbar" class="topbar" style="display: none">
+                        <span class="topbar_close_button ">
+            <img src="/images/close-cross.png" class="topbar_close_image">
+          </span>
+                    </header>
+                    <div id="info-container" class="show_photo_review__info_container">
+                        <!-- product -->
+                    </div>
+                    <div id="message-container" class="show_photo_review__message"
+                         style="height: 403px;">
+                        <div class="show_photo_review__message_contents">
+
+                            <div class="show_photo_review__all_messages">
+                                <!-- comment -->
+                            </div>
+                            <div class="show_photo_review__feedback_container">
+                                <div class="comments js-comments-container">
+                                    <ul class="comments__list">
+                                    </ul>
+
+                                    <div class="comments__new_comment">
+                                        <input
+                                                placeholder="用戶名稱"
+                                                class="comments__new_name_input"
+                                                data-login-required="true"
+                                                type="text"
+                                                name="comment[name]"
+                                        >
+                                        <input
+                                                placeholder="請評論：）"
+                                                class="comments__new_comment_input "
+                                                data-login-required="true"
+                                                type="text"
+                                                name="comment[message]"
+                                        >
+                                        <button class="comments__new_comment_submit_button"
+                                                type="submit">發送
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fullscreen_popup__close">
+            <div class="sprites-circle-close-button"></div>
+        </div>
+    </div>
+</div>
+<script>[___DOMAIN___]</script>
+<script src="[___APP___]"></script>
+</body>
+</html>

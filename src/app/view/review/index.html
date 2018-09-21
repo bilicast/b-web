@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http_equiv="X_UA_Compatible" content="IE=edge">
+    <title>index</title>
+    <link rel="stylesheet" href="/css/application.css[___VERSION___]">
+</head>
+<body class="reviews">
+<div id="content">
+    <div class="products_reviews_list">
+        <div class="products_reviews_form">
+            <div class="products_reviews_form_head">
+                <div class="products_reviews_form_title">
+                    <strong>REVIEW</strong><span class="divider">|</span><span class="weak">文字評論、照片&文字評論</span>
+                </div>
+            </div>
+            <div class="products_reviews_form_body">
+                <div>
+                    <input
+                            placeholder="用戶名稱"
+                            class="review_new_name_input"
+                            type="text"
+                    >
+                </div>
+                <div class="review_form_container">
+                    <textarea class="review_form_message" placeholder="請留下評論" name=""
+                              style="overflow: hidden; height: 68px;"></textarea>
+
+                    <div class="review_form__input_photos" style="display: none;">
+                        <div class="review_form__review_photos">
+                            <ul class="image_fields_container">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="review_form_submit_container">
+                    <div class="review_form_add_image_container" style="cursor: pointer;">
+                        <span class="review_form_add_image_icon"></span>
+                        <div class="review_form_add_image_description">圖片</div>
+                    </div>
+
+                    <div class="review_form__score">
+                        <div class="select2-container review_form__select_rating select_rating" id="s2id_review_score">
+                            <a href="javascript:void(0)" onclick="return false;" class="select2-choice" tabindex="-1">
+                                <div class="select2-chosen">
+                                    <div class="item"><span class="star"></span><span class="star"></span><span
+                                            class="star"></span><span class="star"></span><span
+                                            class="star"></span><span class="text">非常滿意</span></div>
+                                </div>
+                                <span
+                                        class="sprites-icon-drop-down select2__dropdown_icon"></span>
+
+                                <select class="review_form__select_rating select_rating select2-offscreen"
+                                        data-dropdown-css-class="review_form__select_rating_drop" name="review[score]"
+                                        id="review_score" tabindex="-1">
+                                    <option selected="selected" value="5">非常滿意</option>
+                                    <option value="4">滿意</option>
+                                    <option value="3">普通</option>
+                                    <option value="2">不滿意</option>
+                                    <option value="1">非常不滿意</option>
+                                </select>
+                            </a></div>
+                    </div>
+                    <button class="review_form_submit" type="submit">
+                        <span class="review_form_post_review_label">發佈</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="products_reviews_summary products_reviews_summary--small_with_score">
+            <div class="products_reviews_summary__inner">
+
+                <div class="products_reviews_summary__lcontent">
+                    <div class="score_summary score_summary--list">
+                        <div class="score_summary__body">
+                            <div class="score_summary__avg_score">
+                                <div class="score_summary__average">0</div>
+
+                                <div class="score_summary__reviews_count">0 评论</div>
+                            </div>
+                            <ul class="score_summary__score_filters">
+
+                                <li class="score_summary__score_filter " data-score="5">
+                                    <a class="js-link-score">
+                                        <div class="score_summary__score_filter__title">5 Stars</div>
+                                        <div class="score_summary__score_filter__status">
+                                            <div class="score_summary__score_filter__count" id="score5">(0)</div>
+                                            <div class="score_summary__score_filter__check sprites-check"></div>
+                                        </div>
+                                        <div class="score_summary__score_filter__gauge">
+                                            <div style="width: 0%" class="percentile" id="percentile5"></div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="score_summary__score_filter " data-score="4">
+                                    <a class="js-link-score">
+                                        <div class="score_summary__score_filter__title">4 Stars</div>
+                                        <div class="score_summary__score_filter__status">
+                                            <div class="score_summary__score_filter__count" id="score4">(0)</div>
+                                            <div class="score_summary__score_filter__check sprites-check"></div>
+                                        </div>
+                                        <div class="score_summary__score_filter__gauge">
+                                            <div style="width: 0%" class="percentile" id="percentile4"></div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="score_summary__score_filter " data-score="3">
+                                    <a class="js-link-score">
+                                        <div class="score_summary__score_filter__title">3 Stars</div>
+                                        <div class="score_summary__score_filter__status">
+                                            <div class="score_summary__score_filter__count" id="score3">(0)</div>
+                                            <div class="score_summary__score_filter__check sprites-check"></div>
+                                        </div>
+                                        <div class="score_summary__score_filter__gauge">
+                                            <div style="width: 0%" class="percentile" id="percentile3"></div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="score_summary__score_filter " data-score="2">
+                                    <a class="js-link-score">
+                                        <div class="score_summary__score_filter__title">2 Stars</div>
+                                        <div class="score_summary__score_filter__status">
+                                            <div class="score_summary__score_filter__count" id="score2">(0)</div>
+                                            <div class="score_summary__score_filter__check sprites-check"></div>
+                                        </div>
+                                        <div class="score_summary__score_filter__gauge">
+                                            <div style="width: 0%" class="percentile" id="percentile2"></div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li class="score_summary__score_filter " data-score="1">
+                                    <a class="js-link-score">
+                                        <div class="score_summary__score_filter__title">1 Star</div>
+                                        <div class="score_summary__score_filter__status">
+                                            <div class="score_summary__score_filter__count" id="score1">(0)</div>
+                                            <div class="score_summary__score_filter__check sprites-check"></div>
+                                        </div>
+                                        <div class="score_summary__score_filter__gauge">
+                                            <div style="width: 0%" class="percentile" id="percentile1"></div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="widget_reviews js-pagination-list  ">
+            <div class="products_reviews_header">
+                <div class="products_reviews_header__upper">
+    <span class="products_reviews_header__sort_type products_reviews_header__sort_type--selected">
+
+      <strong>最新</strong> 評論 (<span class="reviews-count">0</span>)
+    </span>
+
+
+                    <span class="products_reviews_header__sort_type_divider"> | </span>
+                    <a href="#" id="sort_time">
+                        <span class="products_reviews_header__sort_type">最新</span>
+                    </a>
+
+                    <span class="products_reviews_header__sort_type_divider"> | </span>
+                    <a href="#" id="sort_score">
+                        <span class="products_reviews_header__sort_type">評分</span>
+                    </a>
+                </div>
+                <div class="products_reviews_header__separator"></div>
+            </div>
+
+            <div class="widget_reviews__body products_reviews_list__body">
+                <div class="page">
+                    <ul class="reviews reviews-product">
+                    </ul>
+                    <div class="widget_reviews__message--no_data" style="display: none">沒有評論.</div>
+                </div>
+
+            </div>
+            <div class="reviews_index_foot">
+                <div class="pagination">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="position:absolute;top:-1000px;">
+        <input class="review-image-file" type="file" accept="image/*">
+    </div>
+
+    <div class="popup_container"></div>
+</div>
+
+<script>[___DOMAIN___]</script>
+<script src="[___APP___]"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<li class="reviews_index_gallery_review_container" data-gallery-id="{{postId}}">
+    <div class="reviews_index_gallery_review">
+        <div class="photo_review_thumbnail">
+            <div class="photo_review_thumbnail_thumbnail_container" style="background-image: url({{imageThumbnail}}); background-size: cover;">
+                <!--<img class="js_review_image" alt=""
+                     style="opacity: 1; width: 100%; height: 100%; background-image: url({{imageThumbnail}}); background-size: cover;">-->
+                <!--<ul>
+                    <li class="photo_review_thumbnail_review_image_thumbnail">
+                        <img class="js_review_image" alt=""  style="opacity: 1;"/>
+                    </li>
+                </ul>-->
+            </div>
+            <div class="photo_review_thumbnail_review_author_info">
+                <div class="photo_review_thumbnail_review_title">
+                    {{text}}
+                </div>
+                <div class="photo_review_thumbnail_date_name_container ">
+                    <div class="photo_review_thumbnail_author_name">
+                        {{userName}}
+                    </div>
+                    <div class="photo_review_thumbnail_created_at">
+                        {{createTime}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews_index_gallery_review_review_product" data-url="{{productUrl}}">
+            <div class="reviews_index_gallery_review_review_product_thumbnail">
+                <img alt="" width="90" height="90"
+                     src="{{productThumbnailUrl}}">
+            </div>
+            <div class="reviews_index_gallery_review_review_product_info">
+                <div class="reviews_index_gallery_review_product_info_title">
+                    {{productName}}
+                </div>
+                <div class="reviews_index_gallery_review_product_info_feedbacks">
+                    <span class="reviews_index_gallery_review_reviews_count">評論<strong>{{replyCount}}</strong></span>
+                    <span class="reviews_index_gallery_review_display_score">評分<strong>{{productAvgScore}}</strong></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</li>
